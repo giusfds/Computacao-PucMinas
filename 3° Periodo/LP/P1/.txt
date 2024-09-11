@@ -1,0 +1,28 @@
+QUESTOES DA PROVA!
+
+1) 
+- ser universal
+o fato de uma linguagem de programacao ser universal, nao quer dizer que ela vai ser utilizada em todos os ambitos, significa que ela vai ser capaz de realizar devidamente a atividade que foi designada a, como por exemplo, um jogo, um aplicativo, etc.
+- poder ser emplementada em um computador
+no quesito da linguagem poder ser emplementada em qualquer computador faz ela se tornar uma linguagem de programacao, ja que a mesma sera execultada para realizar tarefas de forma mais eficaz pela maquina do que pelo homem
+
+2)
+a) (V) - as Lp's ocupam sim o espaco principal no curso de ciencia da computacao, ja que o mesmo estuda o comportamento das linguagens
+b) (F) - nao necessariamente a implementacao e a mesma coisa que projetar uma linguagem, ja que existe um milhao de lingaugens por ai que usamos porem nao foram nos que a projetamos
+IMPLEMENTAR - compiladores
+PROJETAR - sintaxe
+c) (V) - nada impede de um criador de uma LP dar a nomeclatura que quiser para os tip[os primitvos, as vezes nem eles existem, dependendo da linguagem
+d) (F) - os conjuntos nao podem ser atualizados de forma seletiva, ja que o mesmotrata tudo como blocos
+e) (V) - depende de como a lp foi estruturada
+f) (F) - referencias penduradas sao extremamente indesejadas, aj que as mesmas podem causar erro de null pointers ou coisas derivadas
+
+3)
+a é uma variável global, iniciada com o valor 10.
+b é uma variável local à função f(), iniciada com 10 sempre que f() é chamada.
+c é uma variável static local à função f(), ou seja, seu valor é preservado entre chamadas da função.
+
+b)
+           inicializacao da variavel estatica           main
+	|------------------|--------------------|---------|------------|----------------|
+Inicio do programa			      funcao              inicializacao
+								das infos da funcao     

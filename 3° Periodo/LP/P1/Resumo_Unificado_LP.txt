@@ -1,13 +1,14 @@
 
-# Resumo de Conceitos de Linguagens de Programação
+Resumo de Conceitos de Linguagens de Programação
 
-## 1. Conceitos Básicos
-- **Alfabeto (Σ)**: Conjunto finito de símbolos, como letras ou números.
-- **Símbolo**: Entidade abstrata que compõe palavras.
-- **Palavra**: Sequência finita de símbolos justapostos (ex.: "abc").
-- **Linguagem Formal**: Conjunto de palavras sobre um alfabeto, como palíndromos ou conjuntos com palavras vazias.
+1. Conceitos Básicos
+- Alfabeto (Σ): Conjunto finito de símbolos, como letras ou números, usado para formar palavras.
+- Símbolo: Entidade abstrata que compõe palavras (letras, números ou outros caracteres).
+- Palavra: Sequência finita de símbolos justapostos (ex.: "abc").
+- Linguagem Formal: Conjunto de palavras formadas a partir de um alfabeto, seguindo regras específicas (ex.: palíndromos).
+- Palavra Vazia (ε): Palavra que não contém símbolos.
 
-### Exemplo prático em C:
+Exemplo prático em C:
 ```c
 // Verificando se uma palavra é um palíndromo
 #include <stdio.h>
@@ -33,12 +34,12 @@ int main() {
 }
 ```
 
-## 2. Gramática
-- **Definição**: Conjunto de regras para gerar palavras em uma linguagem formal.
-- **Componentes**: Variáveis (V), Terminais (T), Produções (P), e Símbolo Inicial (S).
-- **Derivação**: Processo de gerar palavras com base nas produções da gramática.
+2. Gramática
+- Definição: Conjunto de regras para gerar palavras em uma linguagem formal.
+- Componentes: Variáveis (V), Terminais (T), Produções (P), e Símbolo Inicial (S).
+- Derivação: Processo de gerar palavras com base nas produções da gramática.
 
-### Exemplo prático em C:
+Exemplo prático em C:
 ```c
 // Simulação de uma gramática simples gerando palavras
 #include <stdio.h>
@@ -61,11 +62,10 @@ int main() {
 }
 ```
 
-## 3. Sistema de Estados Finitos
-- **Definição**: Modelo matemático que descreve sistemas que podem assumir um número finito de estados.
-- **Exemplo**: Elevadores que resumem informações com base no andar corrente e direção de movimento.
+3. Sistema de Estados Finitos
+- Definição: Modelo matemático que descreve sistemas que podem assumir um número finito de estados.
 
-### Exemplo prático em C:
+Exemplo prático em C:
 ```c
 // Simulando um autômato finito simples
 #include <stdio.h>
@@ -91,22 +91,21 @@ int main() {
 }
 ```
 
-## 4. Implementação de Linguagens
-- **Compiladores**: Tradutores de linguagens de programação. Envolvem análise léxica e sintática para reconhecer e traduzir códigos para execução em máquinas.
-- **Uso em Compiladores**: Técnicas como análise léxica, gramáticas, e geração de código otimizam a tradução de alto nível para instruções de máquina.
+4. Implementação de Linguagens
+- Compiladores: Tradutores de linguagens de programação, envolvendo análise léxica e sintática.
 
-### Exemplo prático em C:
+Exemplo prático em C:
 ```c
-// Exemplo de uma função simples que simula uma parte de um compilador que reconhece identificadores
+// Exemplo de uma função que reconhece identificadores
 #include <stdio.h>
 #include <ctype.h>
 
 int reconheceIdentificador(char palavra[]) {
-    if (!isalpha(palavra[0])) return 0; // Primeiro caractere deve ser uma letra
+    if (!isalpha(palavra[0])) return 0;
     for (int i = 1; palavra[i] != '\0'; i++) {
-        if (!isalnum(palavra[i])) return 0; // Restante deve ser alfanumérico
+        if (!isalnum(palavra[i])) return 0;
     }
-    return 1; // É um identificador válido
+    return 1;
 }
 
 int main() {
@@ -120,13 +119,12 @@ int main() {
 }
 ```
 
-## 5. Tipos de Dados e Armazenamento
-- **Tipos Primitivos**: Inteiro, Real, Caractere, Lógico.
-- **Tipos Compostos**: Tuplas, Registros, Listas.
-- **Variáveis de Heap**: Alocadas dinamicamente durante a execução.
-- **Recursão**: Definição de dados ou funções que podem se referenciar, como árvores.
+5. Tipos de Dados e Armazenamento
+- Tipos Primitivos: Inteiro, Real, Caractere, Lógico.
+- Tipos Compostos: Tuplas, Registros, Listas.
+- Recursão: Funções que podem se referenciar, como árvores.
 
-### Exemplo prático em C:
+Exemplo prático em C:
 ```c
 // Exemplo de uso de heap e ponteiros
 #include <stdio.h>
