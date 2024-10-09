@@ -10,16 +10,16 @@ sabendo que meu curriculo e o 3814, a grade do curso de ciencia da computacao da
 |-----|--------------------------------------------------------|-----------------------------------------------------|-----------|
 | 1   | [``Algoritmos e Estruturas de Dados I``](https://github.com/giusfds/AEDS-I)                 | ---                                                 | ``AEDs1`` |
 | 1   | ``Cálculo I``                                          | ---                                                 | ``C1``    |
-| 1   | Desenvolvimento de Interfaces Web                      | ---                                                 | DIW       |
+| 1   | [Desenvolvimento de Interfaces Web](https://github.com/giusfds/Computacao-PucMinas/tree/main/1°%20Periodo/DIW)                      | ---                                                 | DIW       |
 | 1   | Filosofia: Razão e Modernidade                         | ---                                                 | F:RM      |
-| 1   | Introdução à Computação (extensionista)                | ---                                                 | IC        |
-| 1   | Lab. de Iniciação à Programação                        | ---                                                 | LIP       |
+| 1   | [Introdução à Computação (extensionista)](https://github.com/giusfds/Computacao-PucMinas/tree/main/1°%20Periodo/IC)                | ---                                                 | IC        |
+| 1   | [Lab. de Iniciação à Programação(https://github.com/giusfds/Computacao-PucMinas/tree/main/1°%20Periodo/LIP)]                       | ---                                                 | LIP       |
 | 1   | [Trab. Interdisciplinar I: Front-end](https://github.com/ICEI-PUC-Minas-PMGCC-TI/FeedMe)                    | ---                                                 | TI1       |
 | 2   | [``Algoritmos e Estruturas de Dados II``](https://github.com/giusfds/AEDS-II)                | Algoritmos e Estruturas de Dados I                  | ``AEDs2`` |
 | 2   | ``Arquitetura de Computadores I``                      | Algoritmos e Estruturas de Dados I                  | ``AC1``   |
 | 2   | Cultura Religiosa: Fenômeno Religioso                  | ---                                                 | CR:FR     |
 | 2   | Engenharia de Software I                               | Algoritmos e Estruturas de Dados II (CO)            | ES1       |
-| 2   | Optativa I                                             | ---                                                 | O1        |
+| 2   | [Optativa I](https://github.com/giusfds/Computacao-PucMinas/tree/main/2°%20Periodo/Sistemas%20Inteligentes)                                             | ---                                                 | O1        |
 | 2   | [Trab. Interdisciplinar II: Back-end](https://github.com/ICEI-PUC-Minas-CC-TI/plmg-cc-ti2-2024-1-g02-movesmart)                    | Algoritmos e Estruturas de Dados II (CO), ES1 (CO)  | TI2       |
 | 3   | [``Algoritmos e Estruturas de Dados III``](https://github.com/giusfds/AEDS-III)               | Algoritmos e Estruturas de Dados II, TI2            | ``AEDs3`` |
 | 3   | ``Arquitetura de Computadores II``                     | Arquitetura de Computadores I                       | ``AC2``   |
