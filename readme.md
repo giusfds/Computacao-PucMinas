@@ -13,7 +13,7 @@ sabendo que meu curriculo e o 3814, a grade do curso de ciencia da computacao da
 | 1   | [Desenvolvimento de Interfaces Web](https://github.com/giusfds/Computacao-PucMinas/tree/main/1°%20Periodo/DIW)                      | ---                                                 | DIW       |
 | 1   | Filosofia: Razão e Modernidade                         | ---                                                 | F:RM      |
 | 1   | [Introdução à Computação (extensionista)](https://github.com/giusfds/Computacao-PucMinas/tree/main/1°%20Periodo/IC)                | ---                                                 | IC        |
-| 1   | [Lab. de Iniciação à Programação(https://github.com/giusfds/Computacao-PucMinas/tree/main/1°%20Periodo/LIP)]                       | ---                                                 | LIP       |
+| 1   | [Lab. de Iniciação à Programação](https://github.com/giusfds/Computacao-PucMinas/tree/main/1°%20Periodo/LIP)                       | ---                                                 | LIP       |
 | 1   | [Trab. Interdisciplinar I: Front-end](https://github.com/ICEI-PUC-Minas-PMGCC-TI/FeedMe)                    | ---                                                 | TI1       |
 | 2   | [``Algoritmos e Estruturas de Dados II``](https://github.com/giusfds/AEDS-II)                | Algoritmos e Estruturas de Dados I                  | ``AEDs2`` |
 | 2   | ``Arquitetura de Computadores I``                      | Algoritmos e Estruturas de Dados I                  | ``AC1``   |
