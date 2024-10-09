@@ -1,3 +1,4 @@
 .exe
 .class
-.vscode
+/vscode
+\vscode

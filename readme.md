@@ -8,7 +8,7 @@ sabendo que meu curriculo e o 3814, a grade do curso de ciencia da computacao da
 
 | Per | Disciplina                                             | Pré-Requisito / Co-requisito                        | ID        |
 |-----|--------------------------------------------------------|-----------------------------------------------------|-----------|
-| 1   | ``Algoritmos e Estruturas de Dados I``                 | ---                                                 | ``AEDs1`` |
+| 1   | [``Algoritmos e Estruturas de Dados I``](https://github.com/giusfds/AEDS-I)                 | ---                                                 | ``AEDs1`` |
 | 1   | ``Cálculo I``                                          | ---                                                 | ``C1``    |
 | 1   | Desenvolvimento de Interfaces Web                      | ---                                                 | DIW       |
 | 1   | Filosofia: Razão e Modernidade                         | ---                                                 | F:RM      |
@@ -22,10 +22,10 @@ sabendo que meu curriculo e o 3814, a grade do curso de ciencia da computacao da
 | 2   | Optativa I                                             | ---                                                 | O1        |
 | 2   | Trab. Interdisciplinar II: Back-end                    | Algoritmos e Estruturas de Dados II (CO), ES1 (CO)  | TI2       |
 | 3   | ``Algoritmos e Estruturas de Dados III``               | Algoritmos e Estruturas de Dados II, TI2            | ``AEDs3`` |
-| 3   | ``Arquitetura de Computadores II``                     | Arquitetura de Computadores I                       | ``AC2``       |
+| 3   | ``Arquitetura de Computadores II``                     | Arquitetura de Computadores I                       | ``AC2``   |
 | 3   | Banco de Dados                                         | Algoritmos e Estruturas de Dados II, TI2            | BD        |
-| 3   | Cálculo II                                             | Cálculo I                                           | C2        |
-| 3   | Linguagens de Programação                              | Algoritmos e Estruturas de Dados II                 | LP        |
+| 3   | [Cálculo II](https://github.com/giusfds/Computacao-PucMinas/tree/main/3°%20Periodo/Calculo_2)                                             | Cálculo I                                           | C2        |
+| 3   | [Linguagens de Programação](https://github.com/giusfds/Computacao-PucMinas/tree/main/3°%20Periodo/LP)                              | Algoritmos e Estruturas de Dados II                 | LP        |
 | 3   | Trab. Interdisciplinar III: Pesquisa Aplicada          | Algoritmos e Estruturas de Dados II (CO)            | TI3       |
 | 4   | Estatística e Probabilidade                            | Cálculo I                                           | EP        |
 | 4   | Inteligência Artificial                                | Estatística e Probabilidade (CO), TGC (CO)          | IA        |
