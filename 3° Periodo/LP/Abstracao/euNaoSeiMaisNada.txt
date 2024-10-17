@@ -1,0 +1,37 @@
+1) Abstração em Programação:
+
+  A abstração é o processo de identificar os aspectos importantes de um problema ou fenômeno e ignorar 
+  detalhes irrelevantes.
+  Em programação, isso significa distinguir entre o que uma parte do código faz (sua interface) e como 
+  ela é implementada (os detalhes do código).
+
+2)Funções e Procedimentos:
+
+  Abstrações de função representam uma computação que, quando chamada, avalia uma expressão e retorna
+  um resultado.
+  Abstrações de procedimento representam comandos que, quando executados, atualizam variáveis.
+
+3) Parâmetros e Mecanismos de Passagem:
+
+  Existem várias formas de passar parâmetros em funções/procedimentos, como:
+  Valor: o valor do argumento é copiado para o parâmetro da função.
+  Resultado: o valor resultante da execução é atribuído ao parâmetro.
+  Valor-resultado: combina ambos, passando um valor inicial e recebendo um valor final.
+  Parâmetro variável/referência: uma referência ao argumento é passada, permitindo alterações diretas.
+
+4) Abstrações de Seletor:
+
+  Uma abstração de seletor seria uma forma de criar funções que retornam referências a variáveis, 
+  permitindo operações mais flexíveis sobre dados.
+
+5)Avaliação de Argumentos:
+
+  A ordem de avaliação dos parâmetros pode ser:
+  Aplicativa (prévia): avalia todos os parâmetros antes de executar a função.
+  Normal (tardia): avalia os parâmetros conforme necessário, o que pode ser mais eficiente ou 
+  conveniente em alguns casos.
+
+5) Propriedade de Church-Rosser:
+
+  Se uma expressão pode ser avaliada de várias maneiras (normal ou aplicativa), o resultado será o 
+  mesmo, contanto que a linguagem não permita efeitos colaterais.
