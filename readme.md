@@ -1,8 +1,5 @@
-# O que seriam materias secundarias do curso de ciencia da computacao?
-levando como base a grade curricular do curso de ciencia da computacao da PUC Minas, as materias secundarias seriam as materias que sao obrigatorias, mas nao travam o desemvolvimento linear do seu curso.
-
-# Quais sao essas materias?
-Bom, o mais facil a se fazer nesse momento e eu mostrar a grade do curso de computracao da @PUC Minas, e depois eu falo sobre as materias secundarias.
+# Materias do Curso de Ciencia da Computacao da PUC Minas
+O curso abrange diversas areas da computacao, como desenvolvimento de software, redes de computadores, inteligencia artificial, entre outras. Alem disso, o curso tambem aborda areas de matematica, como calculo, algebra linear, geometria analitica, entre outras. A seguir, temos a grade do curso de ciencia da computacao da PUC Minas, com as materias que eu ja fiz, e as que ainda faltam fazer,
 
 sabendo que meu curriculo e o 3814, a grade do curso de ciencia da computacao da PUC Minas e a seguinte:
 
@@ -64,5 +61,5 @@ sabendo que meu curriculo e o 3814, a grade do curso de ciencia da computacao da
 | 8   | Tópicos em Computação IV                               | PAA                                                 | TC4       |
 | 8   | ``Trabalho de Conclusão de Curso II``                  | TCC1                                                | ``TCC2``  |
 
-tendo em vista as materias destacadas, chamamos isso de arvore principal do curso, ou seja, as materias que vc precisa passar para obrigatoriamente progredir no curso, e as materias secundarias seriam as outras materias, que nao necessariamente precisam de um repositorio para elas, ja que a maioria, por mais que possuam sim o seu grau de dificuldade, sao relativamente mais faceis de se fazer do que a arvore principal. Entao, fica a dica de focar nessas principais, ja que elas travam o curso quase todo.
+tendo em vista as materias destacadas, chamamos isso de arvore principal do curso, ou seja, as materias que vc precisa passar para obrigatoriamente progredir no curso. Essas possuem um repositorio dedicado as nao destacadas, eu gosto de nomealar "Materias Secundarias" onde as mesmas nao precisam de um repositorio dedicado a elas, assim, eu as coloco em um unico repositorio, que e esse.
 
