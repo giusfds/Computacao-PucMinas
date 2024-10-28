@@ -1,0 +1,433 @@
+									RESUMO PRA PROVA 2 
+
+1. ABSTRAÇÃO:
+
+	1.1 - Conceito -> A abstração foca na distinção entre O QUE uma parte do programa faz de COMO ela é implementada. Por exemplo, criar uma LP é uma abstração de um código de máquina. Ela é crucial para a construção de programas grandes, permitindo multiplos níveis de abstrações através de procedimentos.
+	
+	
+	
+	1.2 - Tipos->
+	
+	* Abstração de função: Representa uma função a ser avaliada, produzindo um valor quando chamada. Do ponto de vista do usuário, a chamada d função mapeia argumentos para um resultado. Para o programador, a chamada envolve a avaliação do corpo da função com os parâmetros formais ligados aos argumentos correspondentes.
+	
+	
+	Ex.: (Em C) A função calcular_fatorial calcula o fatorial de um número inteiro. O usuário não precisa saber como o cálculo é realizado internamente, apenas como chamar a função e interpretar o resultado:
+	
+		  int calcular_fatorial(int n) {
+		  if (n == 0) {
+		    return 1;
+		  } else {
+		    return n * calcular_fatorial(n - 1);
+		  }
+		}
+			
+	
+	* Abstração de procedimento: Incorpora um comando a ser executado, atualizando o valor de variaveis quando chamada. O usuário percebe a chamada como uma atualização de variaveis influenciada pelos argumentos, enquanto o programador a entende como a execução do corpo do procedimento com parametros formais ligados aos argumentos.
+	
+	Ex.: (Em C) No exemplo abaixo, definimos um tipo de dado Ponto que representa um ponto em um plano cartesiano. A struct Ponto contém dois membros de dados (x e y) e um ponteiro de função imprimir que aponta para uma função que imprime as coordenadas do ponto. A função imprimir_ponto implementa a lógica de impressão. Ao atribuir imprimir_ponto ao membro imprimir da struct Ponto, estamos encapsulando o comportamento de impressão dentro do próprio tipo de dado:
+	
+		  typedef struct {
+		  int x;
+		  int y;
+		  void (*imprimir)(struct Ponto*);
+		} Ponto;
+
+		void imprimir_ponto(Ponto* p) {
+		  printf("(%d, %d)\n", p->x, p->y);
+		}
+
+		int main() {
+		  Ponto p;
+		  p.x = 10;
+		  p.y = 20;
+		  p.imprimir = imprimir_ponto;
+		  p.imprimir(&p); // Chama a função associada ao Ponto
+		  return 0;
+		}
+		
+		
+	
+	* Abstração de seletor: É uma abstração sobre o acesso a uma variável. Possui um corpo que acessa uma variável e, quando chamada, retorna uma referência a essa variável. Um exemplo hipotético em Pascal é apresentado para ilustrar a definição e uso de um seletor para acessar o primeiro item de uma fila.  É importante notar que, apesar de Pascal não permitir a definição de novas abstrações de seletor, muitas linguagens imperativas já possuem seletores pré-definidos. O Princípio da Abstração sugere que a criação de novas abstrações pode aumentar a expressividade e regularidade de uma linguagem. 
+	
+	Ex.: (Pascal): 
+	
+	
+	selector primeiro (var f: fila): integer is
+...{retorna uma referência ao primeiro item em f}
+
+I := primeiro (filaA);
+primeiro (filaA) := primeiro (filaA) – 1;
+
+
+	Análise do Código:
+
+	- selector primeiro (var f: fila): integer is: Define um seletor chamado primeiro.
+
+	- Um seletor, neste contexto, atua como uma função que retorna uma referência a uma variável.
+
+	- O seletor primeiro recebe uma fila f como argumento (passado por referência, indicado por var) e retorna um valor inteiro, que representa o primeiro item da fila.
+
+	- Note que a sintaxe selector não é uma palavra-chave padrão em Pascal. O exemplo a utiliza para ilustrar o conceito de abstração de seletor, que não é diretamente suportado pela linguagem.
+
+	- ...{retorna uma referência ao primeiro item em f}:  Indica que o corpo do seletor (omitido no exemplo) conteria a lógica para acessar e retornar uma referência ao primeiro item da fila f.
+
+	- I := primeiro (filaA);:  Chama o seletor primeiro passando a fila filaA como argumento. O valor retornado, que é uma referência ao primeiro item da fila, é atribuído à variável I.
+
+	- primeiro (filaA) := primeiro (filaA) – 1;:  Utiliza o seletor primeiro para modificar o valor do primeiro item da fila. A expressão primeiro (filaA) à esquerda da atribuição retorna uma referência ao primeiro item. A expressão à direita, primeiro (filaA) – 1, obtém o valor do primeiro item, subtrai 1 e, em seguida, atribui o resultado de volta ao primeiro item da fila através da referência.
+
+
+
+
+	1.3 - Principio da abstração -> Afirma que é possível construir abstrações sobre qualquer classe síntatica que defina algum tipo de computação. (IMPORTANTE!)
+	
+	
+	
+	1.4 - Parâmetros ->
+	 
+		* Definições:
+		- Parâmetro Formal: Identificador usado dentro de uma função para representar um argumento. 
+		- Parâmetro Real: Expressão que gera um argumento. 
+		- Argumento: Valor passado para uma abstração. Conjunto de valores permitidos como argumentos varia de acordo com a LP
+		
+		Ex.: (Em C): 
+			Função soma:
+			
+			- A função soma recebe dois parâmetros formais, a e b, que são declarados dentro dos parênteses na definição da função.
+			
+			- Os parâmetros formais agem como variáveis locais dentro da função.
+			
+			- O corpo da função calcula a soma de a e b e retorna o resultado.
+			
+			Função main:
+			
+			- As variáveis x e y são inicializadas com os valores 5 e 10, respectivamente.
+			
+			- A função soma é chamada com x e y como parâmetros reais.
+			
+			- Os argumentos, neste caso, são os valores de x e y, ou seja, 5 e 10.
+			
+			- O valor retornado pela função soma é armazenado na variável resultado.
+			
+			Observações:
+			
+			- Os parâmetros reais são as expressões ou valores passados para a função durante a chamada.
+			
+			- Os parâmetros formais são os nomes usados na definição da função para representar os valores recebidos.
+			
+			- Os argumentos são os valores reais que são passados para a função quando ela é chamada.
+			
+			- Em C, a passagem de parâmetros é feita por valor, o que significa que cópias dos valores dos argumentos são passadas para a função.
+			
+			Relação com Abstração:
+			
+			- A utilização de parâmetros em funções é uma forma de abstração, pois permite que a função seja utilizada com diferentes valores de         		entrada sem a necessidade de modificar o código da função. A função soma, por exemplo, pode ser utilizada para somar quaisquer dois números inteiros, 	independentemente dos valores específicos de x e y na função main.
+			
+			A FUNÇÃO SOMA EM SI:
+			
+			#include <stdio.h>
+
+			int soma(int a, int b) {  // a e b são parâmetros formais
+			  return a + b;
+			}
+
+			int main() {
+			  int x = 5;   // x é uma variável
+			  int y = 10;  // y é uma variável
+			  int resultado = soma(x, y);  // x e y são parâmetros reais, 5 e 10 são os argumentos
+			  printf("Resultado: %d\n", resultado);
+			  return 0;
+			}
+			
+		
+		
+			
+	1.5 - Mecanismos de passagem ->
+	
+		* Mecanismos de Copia: Permitem a cópia de valores para dentro ou fora de uma abstração durante a chamada. Os parâmetros formais representam variáveis locais, criadas na entrada e destruídas na saída da abstração. Exemplos:
+		
+		- Passagem por Valor: Uma váriavel local é crida na entrada da abstração, recebendo o valor do argumento. Alterações nessa variável não afetam variáveis externas. 
+		
+		- Passagem por Resultado: O argumento deve ser referência a uma variável. Uma variável local é criada sem valor inicial, e na sáida da abstração, recebe o valor final da variável local. 
+		
+		- Passagem por Valor-Resultado: Os dois combinados PORRA!
+		
+		
+		
+		* Mecanismos de Definição: Permitem que um parâmetro formal seja ligado diretamente ao argumento. Exemplos:
+		
+		- Parâmetro Constante: O argumento é um valor. O parâmetro formal é ligado ao valor do argumento durante a ativação da abstração. 
+		
+		- Parâmetro Variável ( ou de Referência ): O argumento é referência a uma variável, e o uso do parâmetro formal se torna um acesso indireto ao argumento; 
+		
+		- Parâmetro Procidimental: O argumento é uma abstração de procedimento. 
+		
+		- Parâmetro Funcional: O argumento é uma abstração de função. A passagem de subprogramas como parâmetros permite que um mesmo subprograma execute funções diferentes. No entanto, esse mecanismo pode torna o código obscuro.	
+		
+		
+		* Cópica X Definição : 
+		
+		    - Os mecanismos de definição geralmente possuem uma semântica mais simples e são mais eficientes.
+			
+		    - Parâmetros variáveis podem levar ao problema de "aliasing" (apelidos), tornando o código mais difícil de entender.
+			
+		    - A escolha entre parâmetros constantes/variáveis e mecanismos de cópia depende do contexto,  pois em alguns casos a expressividade é similar
+		    
+	
+	1.6 - Ordem de avaliação de parâmetros ->
+	
+		* Tipos: 
+		
+		- Avaliação prévia( ou de Ordem Aplicativa ): O parâmetro real é avaliado uma única vez no ponto de chamada, e seu valor substituí cada ocorrência do parâmetro formal. 
+		
+		- Avaliação de Ordem Normal: O parâmetro formal é substituído pelo real, e a avaliação ocorre apenas quando o argumento é usado.
+		
+		- Avaliação Tardia: O argumento é avaliado somente na primeira vez em que é usado.
+		
+	
+	1.7 - Funções Strict e Nonstrict ->
+		
+		* Função Strict (Rigorosa): A função só pode ser avaliada se todos os seus argumentos puderem ser avaliados. 
+		* Função Nonstrict: A função pode ser avalida mesmo que algum argumento não possa.
+		
+		Exemplo.: 
+		
+		-- Função strict
+		
+		somaStrict a b = a + b
+
+		-- Função nonstrict (utilizando avaliação lazy)
+		
+		somaNonstrict a b = if a > 0 then a + b else 0
+
+	       - Explicação dos exemplos:
+		
+	       - somaStrict: Esta função é strict porque a avaliação de a + b requer que ambos a e b sejam avaliados. Se qualquer um dos argumentos for indefinido (por exemplo, resultar em um erro), a função também resultará em um erro.
+		
+	       -somaNonstrict: Esta função é nonstrict com relação ao argumento b porque a condição a > 0 é avaliada primeiro. Se a for menor ou igual a 0, a expressão a + b nunca é avaliada, e b pode ser indefinido sem causar um erro na função.
+		Observações:
+		
+	       - A definição de strict e nonstrict fornecida nas fontes está relacionada à ordem de avaliação dos argumentos.
+		
+	       - Em linguagens funcionais como Haskell, o conceito de strictness está mais relacionado à capacidade da função de lidar com argumentos indefinidos, o que é possível através da avaliação lazy.
+		
+	       - As fontes fornecidas não discutem avaliação lazy, que é um conceito importante para entender a diferença entre funções strict e nonstrict em linguagens funcionais.
+	       
+	       
+	       
+	       
+	1.8 - Propriedade de Church-Rosser -> Se uma expressão pode ser avaliada, ela pode ser avaliada consistentemente usando ordem normal. Se a avaliação puder ser feita em diferentes ordens ( misturndo normal e aplicativa ), todas as ordens produzirão o mesmo resultado. Linguagens que permitem efeitos colaterais não possuem essa propriedade.
+	
+	1.9 - Passagem por nome -> Cada ocorrência do parâmetro é substituída textualmente pelo argumento. É um mecanismo poderoso por permitir a passagem de funções, procedimentos, variáveis e estruturas de dados, mas pode resultar em código de difícil leitura.
+	
+	Ex.: Para ilustrar a passagem por nome, considere o seguinte exemplo em uma linguagem hipotética que suporte esse mecanismo:
+
+	inteiro i = 1;
+
+	procedimento incrementa(nome inteiro x) {
+	  x := x + 1;
+	  escreva(i);
+	}
+
+	inicio
+	  incrementa(i);
+	  escreva(i);
+	fim
+
+	Explicação:
+	
+	Variável i: Uma variável global i é inicializada com o valor 1.
+	
+	Procedimento incrementa: O procedimento incrementa recebe um parâmetro x por nome (indicado pela palavra-chave nome). Dentro do procedimento:
+	
+	- A instrução x := x + 1 incrementa o valor de x. Como x é passado por nome, essa instrução na verdade incrementa a variável i no escopo global.
+	
+	- A instrução escreva(i) imprime o valor de i.
+	
+	Chamada do Procedimento: O procedimento incrementa é chamado com o argumento i.
+	
+	Saída: A saída do programa seria:
+	
+	 - (impresso dentro do procedimento incrementa)
+	
+	 - (impresso após a chamada do procedimento)
+	 
+	Análise:
+	
+	- Na passagem por nome, o argumento i não é avaliado no ponto da chamada. Em vez disso, o nome i é substituído textualmente no corpo do procedimento incrementa sempre que o parâmetro x é usado. Isso leva à modificação direta da variável i no escopo global.
+	
+	Comparação com Passagem por Valor:
+	
+	- Se a passagem de parâmetros fosse por valor, o procedimento incrementa receberia uma cópia do valor de i no momento da chamada. A modificação do parâmetro x dentro do procedimento não afetaria a variável i no escopo global, e a saída seria:
+	
+	- (impresso dentro do procedimento incrementa)
+	
+	- (impresso após a chamada do procedimento)
+	
+	
+	
+	
+	
+
+===================================================================================================================================================================	
+	
+	
+	
+	
+2. ENCAPSULAMENTO: 
+
+	2.1 - Conceito -> Ocultação de componentes de um modulo, tornando-os invisíveis externamente. Módulos bem projetados possuem um único objetivo e uma interface pequena com outros modulosm, promovendo reutilização. A abstração é fundamental para a modularidade. 
+	
+	
+	2.2 - Pacotes -> 
+		
+		* Pacotes Simples: Um conjunto encapsulado de amarrações, definidos por uma lista de informações declarativas, como tipos, constantes, varíaveis, procedimentos, funções e outros pacotes. 
+		
+		
+		Ex.: (Ada)
+		
+		package conversao_metrica is
+		  pol_cm: constant Float := 2.54;
+		  pe_cm: constant Float := 30.48;
+		  jarda_cm: constant Float := 91.44;
+		  milha_km: constant Float := 1.609;
+		end conversao_metrica;
+		
+		- Neste exemplo, o pacote conversao_metrica define constantes para conversão de unidades de medida. As constantes pol_cm, pe_cm, jarda_cm e milha_km representam os fatores de conversão de polegadas para centímetros, pés para centímetros, jardas para centímetros e milhas para quilômetros, respectivamente.
+		
+		
+		
+		* Ocultamento de informação: Um pacote pode conter componentes exportáveis( visíveis externamente ) e escondidos ( usados internamente ).Em Ada, a declaração do pacote define os componentes exportáveis, enquanto o corpo do pacote contém os componentes escondidos e a implementação dos componentes exportáveis.
+		
+		Ex.: (Ada) 
+		
+		package trig is
+		  function sin (x: in float) return float;
+		  function cos (x: in float) return float;
+		end trig;
+
+		package body trig is
+		  pi: constant float := 3.1416;
+
+		  function sin (x: in float) return float is
+		    -- comandos para calcular o seno de x
+		  begin
+		    ...
+		  end sin;
+
+		  function cos (x: in float) return float is
+		    -- comandos para calcular o coseno de x
+		  begin
+		    ...
+		  end cos;
+		end trig;
+		
+		
+		- Neste exemplo, o pacote trig declara as funções sin e cos, que calculam o seno e o cosseno de um ângulo, respectivamente. A constante pi e a implementação das funções sin e cos estão no corpo do pacote e são ocultos do usuário do pacote.
+
+
+	2.3 - Tipos Abstratos -> Um tipo definido por um grupo de operações, com a representação interna escondida do usuário. 
+	
+		* Vantagens: 
+		
+		- A representação interna pode ser modificada sem afetar o codigo externo.
+		
+		- Permite a definição de tipos com multiplas representações, garantido que apenas as propriedades desejadas sejam visíveis. 
+		
+		Ex.: (Ada) 
+		
+		package tipo_turma is
+		  type id_aluno is integer;
+		  type Turma is limited private;
+
+		  procedure inclui_aluno (t: in out Turma; aluno: in id_aluno);
+		  procedure cria_turma (t: in out Turma; prof: in integer; sala: in integer);
+
+		private
+		  tam_max: constant integer := 65;
+		  type Turma is
+		    record
+		      sala: integer;
+		      professor: integer;
+		      tam_classe: integer range 0..tam_max := 0;
+		      lista_classe: array (1..tam_max) of id_aluno;
+		    end record;
+		end tipo_turma;
+
+		package body tipo_turma is
+		  procedure inclui_aluno (t: in out Turma; aluno: in id_aluno) is
+		    -- código para inclusão de um aluno na turma
+		  begin
+		    ...
+		  end inclui_aluno;
+
+		  procedure cria_turma (t: in out Turma; prof: in integer; sala: in integer) is
+		    -- código para criar uma nova turma
+		  begin
+		    ...
+		  end cria_turma;
+		end tipo_turma;
+		
+		
+		- A representação interna do tipo abstrato é escondida do usuário, protegendo os dados e garantindo a integridade do tipo.
+		
+		
+		
+	       * Tipos Abstratos X Tipos Pré-definidos: : Tipos abstratos são similares aos tipos pré-definidos, permitindo a criação de variáveis e o uso de suas operações
+	       
+	       
+	2.4 - Objetos -> 
+		
+		* Objetos Simples: Uma variável escondida em um módulo, com operações exportáveis que atuam sobre ela. 
+		
+		* Classes de Objetos: Permitem a definição de classes de objetos similares, onde cada instância possui seus proprios dados e procedimentos 
+		
+		
+	2.5 - Genêricos -> 
+		
+		* Abstrações Genêricas: São abstrações sobre declarações. Em Ada, os pacotes genéricos permitem a criação de abstrações reutilizáveis que podem ser instanciadas com diferentes tipos e valores.
+		
+		Ex.: 
+		
+		generic
+	  type Elem is private;
+	  tam: in positive;
+	package tipo_pilha is
+	  type Pilha is private;
+	  procedure empilha (i: in Elem; s: in out pilha);
+	  procedure desempilha (i: out Elem; s: in out  pilha);
+	private
+	  type Pilha is
+	    record
+	      dados: array (1.. tam) of Elem;
+	      topo: integer range 0..tam := 0;
+	    end record;
+	end tipo_pilha;
+
+	package body tipo_pilha is
+	  procedure empilha (i: in Elem; s: in out pilha);
+	  -- código para inclusão de elemento na pilha
+	  procedure desempilha (i: out Elem; s: in out  pilha);
+	  -- código para retirar elemento da pilha
+	end tipo_pilha;
+
+
+	
+	
+	2.6 - Tipos Abstratos X Classes de Objetos ->
+	
+		* Tipos Abstratos: As operações ( funções e procedimentos ) possuem um parâmetro a mais para o objeto sobre o qual operam. Na chamada, todos os argumentos são explicitos.
+		
+		* Classes de Objetos: Instâncias diferentes definem procedimentos distintos que acessam um objeto de dados especifico. Os procedimentos e funções possuem um parâmetro implicito, que é o proprio objeto. 
+		
+		* Tipos abstratos expandem a variedade de tipos disponiveis para o programador, enquanto as Classes de objetos permitem a criação de multiplas instâncias de um mesmo tipo, cada uma com seus proprios dados. 
+
+
+
+
+
+
+
+
+
+
+
