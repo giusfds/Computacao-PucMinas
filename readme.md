@@ -24,7 +24,7 @@ sabendo que meu curriculo e o 3814, a grade do curso de ciencia da computacao da
 | 3   | [Cálculo II](https://github.com/giusfds/Computacao-PucMinas/tree/main/3°%20Periodo/Calculo_2)                       | Cálculo I                                           | C2        |
 | 3   | [Linguagens de Programação](https://github.com/giusfds/Computacao-PucMinas/tree/main/3°%20Periodo/LP)               | Algoritmos e Estruturas de Dados II                 | LP        |
 | 3   | [Trab. Interdisciplinar III: Pesquisa Aplicada](https://github.com/ICEI-PUC-Minas-CC-TI/plmg-cc-ti3-2024-2-g9-gcjp) | Algoritmos e Estruturas de Dados II (CO)            | TI3       |
-| 4   | Estatística e Probabilidade                                                                                         | Cálculo I                                           | EP        |
+| 4   | [Estatística e Probabilidade](https://github.com/giusfds/Computacao-PucMinas/tree/main/4°%20Periodo/EP)             | Cálculo I                                           | EP        |
 | 4   | Inteligência Artificial                                                                                             | Estatística e Probabilidade (CO), TGC (CO)          | IA        |
 | 4   | [Lab. de Desenvol. para Dispositivos Móveis](https://github.com/giusfds/LDDM)                                       | Algoritmos e Estruturas de Dados II                 | LDDM      |
 | 4   | Modelagem e Avaliação de Desempenho                                                                                 | EP (CO), TGC (CO)                                   | MAD       |
