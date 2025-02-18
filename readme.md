@@ -65,6 +65,8 @@ Sabendo que meu curriculo e o 3814, a grade do curso de ciencia da computacao da
 > - ✔ : Feito
 > - 📍 : Em andamento
 > - ❌: Não feito
+> - Feitas: **17 materias**
+> - Falta fazer: **32 materias**
 
 Tendo em vista as materias destacadas, chamamos isso de arvore principal do curso, ou seja, as materias que vc precisa passar para obrigatoriamente progredir no curso. Essas possuem um repositorio dedicado as nao destacadas, eu gosto de nomealar "Materias Secundarias" onde as mesmas nao precisam de um repositorio dedicado a elas, assim, eu as coloco em um unico repositorio, que e esse.
 
