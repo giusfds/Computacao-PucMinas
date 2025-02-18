@@ -1,7 +1,7 @@
 # Materias do Curso de Ciencia da Computacao da PUC Minas
 O curso abrange diversas areas da computacao, como desenvolvimento de software, redes de computadores, inteligencia artificial, entre outras. Alem disso, o curso tambem aborda areas de matematica, como calculo, algebra linear, geometria analitica, entre outras. A seguir, temos a grade do curso de ciencia da computacao da PUC Minas, com as materias que eu ja fiz, e as que ainda faltam fazer,
 
-sabendo que meu curriculo e o 3814, a grade do curso de ciencia da computacao da PUC Minas e a seguinte:
+Sabendo que meu curriculo e o 3814, a grade do curso de ciencia da computacao da PUC Minas e a seguinte:
 
 | Per | Disciplina                                                                                                          | Pré-Requisito / Co-requisito                        | ID        | Feito |
 |-----|---------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|-----------|-------|
@@ -61,10 +61,10 @@ sabendo que meu curriculo e o 3814, a grade do curso de ciencia da computacao da
 | 8   | Tópicos em Computação IV                                                                                            | PAA                                                 | TC4       | ❌    |
 | 8   | ``Trabalho de Conclusão de Curso II``                                                                               | TCC1                                                | ``TCC2``  | ❌    |
 
-Legenda:
-- ✔ : Feito
-- 📍 : Em andamento
-- ❌: Não feito
+> ### Legenda:
+> - ✔ : Feito
+> - 📍 : Em andamento
+> - ❌: Não feito
 
-tendo em vista as materias destacadas, chamamos isso de arvore principal do curso, ou seja, as materias que vc precisa passar para obrigatoriamente progredir no curso. Essas possuem um repositorio dedicado as nao destacadas, eu gosto de nomealar "Materias Secundarias" onde as mesmas nao precisam de um repositorio dedicado a elas, assim, eu as coloco em um unico repositorio, que e esse.
+Tendo em vista as materias destacadas, chamamos isso de arvore principal do curso, ou seja, as materias que vc precisa passar para obrigatoriamente progredir no curso. Essas possuem um repositorio dedicado as nao destacadas, eu gosto de nomealar "Materias Secundarias" onde as mesmas nao precisam de um repositorio dedicado a elas, assim, eu as coloco em um unico repositorio, que e esse.
 
