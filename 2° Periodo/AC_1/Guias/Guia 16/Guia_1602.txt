@@ -1,0 +1,36 @@
+// Guia_16
+// Giuseppe
+// 801779
+
+JMP MAIN
+
+// Função IDIV: Quociente
+F_IDIV:
+    POP H       // Salvar endereço de retorno
+    POP B       // BC contém os parâmetros (B = dividendo, C = divisor)
+    MVI A, 00   // A = 0 (quociente inicial)
+IDIV_LOOP:
+    CMP B       // Comparar B com C
+    JC IDIV_END // Se B < C, fim
+    SUB C       // B = B - C
+    INR A       // Incrementa o quociente
+    JMP IDIV_LOOP
+IDIV_END:
+    PUSH H      // Restaurar endereço de retorno
+    RET
+
+// Programa principal
+MAIN:
+    LXI H, 0050 // HL aponta para dado01
+    MOV B, M    // B = MEM[0050]
+    INX H       // HL++
+    MOV C, M    // C = MEM[0051]
+    PUSH B      // Empilha B
+    CALL F_IDIV // Chama F_IDIV
+    STA 0052    // Armazena o resultado em 0052
+    HLT
+
+// Dados
+// dado01: 08h ; dividendo
+// dado02: 02h ; divisor
+// dado03: 00h ; resultado

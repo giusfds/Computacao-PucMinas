@@ -1,0 +1,58 @@
+1)
+  A)
+    todos os valores achados aqui, sao usando a tabela dada no guia na pagina 8
+    a)   0,00011(2)  = 0.09375(10) 
+    b)   0,01001(2)  = 0.28125(10) 
+    c)   0,10101(2)  =  0.9375(10) 
+    d)   1,11101(2)  = 2.1875(10) 
+    e)  11,11001(2)  = 4.0625(10)
+
+  B) 
+    Guia0201B.v
+
+2)
+  A)
+    todos os valore achados aqui, sao usando a tabela dada no guia
+    a.)   0,375000(10)    = 0.0101(2) 
+    b.)   2,125000 (10)    = 1.0001(2) 
+    c.)   3,625000 (10)     = 11.101(2) 
+    d.)   5,03125 (10)      = 101.00001(2) 
+    e.)   6,750000 (10)    = 110.11(2)
+
+  B)
+    Guia0202B.v
+
+3)
+  A)
+    todos os valore achados aqui, sao usando a tabela dada no guia
+    a.) 0,011110(2)     = 0.132(4) 
+    b.) 0,101001(2)     = 0.51(8) 
+    c.) 0,100110(2)     = 0.26(16) 
+    d.) 1,111011(2)     = 1.73(8) 
+    e.) 1101,1001(2)    = d.9(16)
+
+  B)
+    Guia0203B.v
+
+4)
+  A)
+    a.) 0,321(4)   = 0,111001     (2)
+    b.) 0,3D2(16)  = 0,33102      (4)  
+    c.) 0,751(8)   = 0.111101001  (2) 
+    d.) 7,345(8)   = 13,3211      (4)   DICA: Converter para binário primeiro, depois para a base 4. 
+    e.) F,A5E(16)  = 33,221132    (4)   DICA: Converter diretamente por desagrupamento. 
+
+  B)
+    Guia0204B.v
+
+5)
+  A)
+    a.) 101,11(2)    +  10,011(2)  =  1000.0010    (2) 
+    b.) 1000,101(2)  -  10,01(2)   =  0110.0110    (2)    
+    c.) 101,101(2)   *  10,101(2)  =  1101.1100    (2)    
+    d.) 10111,01(2)  /  11,011(2)  =  0110.1110... (2)   (em decimal deu 6,8888...)
+    e.) 1101011(2)   %  1101(2)    =  0011         (2)    
+
+  B)
+    Guia0205B.v
+    

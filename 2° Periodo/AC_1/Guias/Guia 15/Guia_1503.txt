@@ -1,0 +1,20 @@
+// Guia 15 
+// 801779 
+// Giuseppe
+
+LXI H, dado1        ; HL <- addr(dado01)
+MOV A, M            ; A <- MEM[dado01]
+INX H               ; HL <- HL + 1 (dado02)
+SUB M               ; A <- A - MEM[dado02]
+DAA                 ; Ajusta resultado para BCD
+
+INX H               ; HL <- HL + 1 (dado03)
+ADD M               ; A <- A + MEM[dado03]
+DAA                 ; Ajusta resultado para BCD
+
+INX H               ; HL <- HL + 1 (dado04)
+SUB M               ; A <- A - MEM[dado04]
+DAA                 ; Ajusta resultado para BCD
+
+STA dado5           ; MEM[dado05] <- A
+HLT                 ; halt
