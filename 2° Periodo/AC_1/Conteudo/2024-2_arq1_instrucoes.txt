@@ -1,0 +1,110 @@
+Instruções para entregas de tarefas:
+
+1. Colocar nome e matrícula 
+   em todos os arquivos com texto 
+   (e como comentários iniciais em programas).
+   Formato  requerido   : .txt
+   Formatos extras poderão acompanhar o texto:
+   Formatos suplementar : .rtf
+   Formatos dispensáveis: .doc, .docx, 
+                          .xls, .xlsx ou .pdf,
+                          (somente quando solicitados).
+   Arquivos com programas deverão ser entregues 
+   separadamente do texto para as respostas manuais,
+   com as devidas extensões, 
+   de modo a poderem ser compilados e testados.
+   Formatos: .v, .vcd, .c, .cpp, .java, .py).
+   Arquivos com diagramas, como os gerados por
+   Logisim (.circ) ou JFlap (.jfl), 
+   deverão ser entregues em suas formas originais. 
+   Imagens exportadas dos circuitos poderão acompanhar 
+   os mesmos, mas não os substituirão e  
+   não servirão como substitudos para avaliação. 
+   Evitar outros tipos de fotos ou capturas de telas.
+2. Criar uma pasta com o número de matrícula e nome
+   (por exemplo, 999999-XXX_YYY_ZZZ).
+   Evitar espaços em branco, acentos e cedilha
+   em nomes de pastas.
+3. Colocar nessa pasta todos os arquivos do tipo texto
+   relativos à atividade, incluindo bibliotecas e testes.
+   Arquivos intermediários (.o) ou executáveis (.exe)
+   deverão ser excluídos.
+   Evitar espaços em branco, acentos e cedilha
+   em nomes de arquivos.
+   Os códigos fontes deverão estar em formatos compatíveis
+   para a compilação e testes (ou simulações).
+4. Colocar nessa pasta todos os arquivos 
+   relativos à atividade.
+   Arquivos contendo comentários/observações (README.txt)
+   poderão ser anexados à raiz da pasta principal.
+5. Comprimir a pasta (999999-XXX_YYY_ZZZ.zip)
+   Evitar outros tipos de compactação (.rar, .Gz, .7z).
+6. Entregar o arquivo compactado (999999-XXX_YYY_ZZZ.zip)
+   na atividade aberta correspondente.
+7. Exercícios em atraso poderão ser entregues em pastas separadas,
+   na mesma tarefa, devidamente identificadas; 
+   mas estarão sujeitos aos critérios usados para 
+   entregas em atraso, independente dos motivos, 
+   e poderão NÃO ser considerados para efeitos de avaliação.
+
+Sugestão:
+   Tentar entregar os exercícios com antecipação.
+   Estabelecer como rotina realizar um primeiro envio
+   pelo menos uma hora antes do prazo estipulado. 
+   Se necessário, ainda haverá uma hora para revisão e novo envio.
+
+Observações:
+   Exercícios entregues com muito atraso  
+   NÃO serão considerados para efeito de avaliação.
+   
+   Em virtude de recesso ou feriado, 
+   datas de entregas poderão ser antecipadas.
+
+   Comentários, observações ou outros informações
+   pertinentes às tarefas poderão ser anexados,
+   na mesma pastas, em arquivo texto - README.TXT
+   para facilitar a comunicação de detalhes.
+
+___
+
+Instruções para entregas de tarefas com artigo:
+
+1. Colocar nome e matrícula 
+   em todos os arquivos com texto 
+   (e como comentários iniciais em programas).
+   Formato  requerido  : .txt
+   Formatos extras poderão acompanhar o texto:
+   Formato suplementar : .rtf
+   Formatos extras     : .tex e .pdf (ambos)
+2. Criar uma pasta com o número de matrícula e nome
+   (por exemplo, 999999-XXX_YYY_ZZZ).
+   Evitar espaços em branco, acentos e cedilha
+   em nomes de pastas.
+3. Colocar nessa pasta todos os arquivos 
+   relativos à atividade
+   Evitar espaços em branco, acentos e cedilha
+   em nomes de arquivos.
+   Os códigos fontes deverão estar em formatos compatíveis
+   para a compilação e testes (ou simulações).
+4. Colocar nessa pasta todos os arquivos 
+   relativos à atividade.
+   Arquivos contendo comentários/observações (README.txt)
+   poderão ser anexados na raiz da pasta principal.
+5. Comprimir a pasta (999999-XXX_YYY_ZZZ.zip)
+   Evitar outros tipos de compactação (.rar, .gz, .7z).
+6. Entregar o arquivo compactado (999999-XXX_YYY_ZZZ.zip)
+   na atividade aberta correspondente para o artigo.
+
+Sugestão:
+   Tentar entregar os exercícios com antecipação.
+   Estabelecer como rotina realizar um primeiro envio
+   pelo menos uma hora antes do prazo estipulado. 
+   Se necessário, ainda haverá uma hora para revisão e novo envio.
+
+Observações:
+   Exercícios entregues com muito atraso  
+   NÃO serão considerados para efeito de avaliação.
+   
+   Em virtude de recesso ou feriado, 
+   datas de entregas poderão ser antecipadas.
+

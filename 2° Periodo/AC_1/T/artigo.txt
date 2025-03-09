@@ -1,0 +1,249 @@
+                                            PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS
+                                                Instituto de Ciências Exatas e Informática
+
+
+                                                          Atividade Prática
+                                                          Practical Activity
+
+
+                                                                                     Giuseppe Sena Cordeiro - 801779
+
+
+                                                                Resumo:
+            Este artigo científico explora a relação entre os conceitos apresentados em "O CPLD (Dispositivo Complexo
+            de Lógica Programável aplicado em automação industrial)", "Dispositivos Lógicos Programáveis" e o artigo 
+            "Design and Implementation of Digital Logic Circuits using FPGA Technology". Além disso, são definidos e 
+            analisados os acrônimos ASIC (Application-Specific Integrated Circuit), ASSP (Application-Specific 
+            Standard Product), SPLD (Simple Programmable Logic Device), CPLD (Complex Programmable Logic Device), 
+            SoC (System on Chip) e FPGA (Field-Programmable Gate Array).
+
+           Em seguida, são abordadas as diferenças entre PROM (Programmable Read-Only Memory), PLA (Programmable Logic
+           Array) e PAL (Programmable Array Logic). Por fim, o estudo destaca as distinções entre CPLDs e FPGAs, 
+           comparando suas arquiteturas, modos de programação e aplicações específicas.
+
+
+                                                                Abstract:
+
+	   This scientific article explores the relationship between the concepts presented in "The CPLD (Complex 
+	   Programmable Logic Device Applied in Industrial Automation)," "Programmable Logic Devices," and the 
+	   article "Design and Implementation of Digital Logic Circuits using FPGA Technology." Additionally, it 
+	   defines and analyzes the acronyms ASIC (Application-Specific Integrated Circuit), ASSP (Application
+           -Specific Standard Product), SPLD (Simple Programmable Logic Device), CPLD (Complex Programmable Logic
+           Device), SoC (System on Chip), and FPGA (Field-Programmable Gate Array).
+
+           Next, it addresses the differences between PROM (Programmable Read-Only Memory), PLA (Programmable Logic
+           Array), and PAL (Programmable Array Logic). Finally, the study highlights the distinctions between CPLDs 
+ 	   and FPGAs, comparing their architectures, programming methods, and specific applications.
+
+
+1. RELAÇÃO ENTRE ARTIGOS:
+
+    1.1. RESUMO DO ARTIGOS:
+
+        1.1.1. "Design and Implementation of Digital Logic Circuits using FPGA Technology":
+
+        Este artigo apresenta os conceitos essenciais dos Circuitos Lógicos Programáveis em Campo de Aplicação (FPGA) 
+            examina sua utilização na implementação de circuitos lógicos digitais. Também são discutidas as vantagens e 
+        desvantagens do uso de FPGAs em comparação com outras tecnologias de implementação digital, como ASICs e CPLDs. 
+        Além disso, o estudo oferece uma visão sobre as aplicações práticas e os principais desafios enfrentados durante 
+        a concepção e desenvolvimento de circuitos digitais com FPGA.
+
+  	1.1.2. "O CPLD (Dispositivo Complexo de Lógica Programação aplicado em automação industrial)":
+
+        O artigo apresenta um estudo sobre a utilização de CPLDs (Dispositivos Complexos de Lógica Programável) na automação
+        industrial. Os autores desenvolveram um controlador lógico versátil e econômico utilizando um CPLD da família MAX 
+        3000A da Altera Corp. Eles destacam a eficiência desse controlador ao simular um processo industrial em uma planta
+        didática, demonstrando resultados equivalentes aos dos controladores tradicionais do mercado, porém com menor custo.
+        Isso indica que os CPLDs emergem como uma alternativa promissora para a automação industrial, oferecendo economia e 
+        eficiência aos profissionais da área.
+
+	1.1.3. "Dispositivos Lógicos Programáveis":
+
+        O artigo aborda o rápido avanço da tecnologia de circuitos digitais, desde a descoberta do efeito transistor até a 
+        introdução dos circuitos integrados comerciais. Enfatiza-se o surgimento do microprocessador e o progresso na tecnologia
+        de dispositivos lógicos, como os Dispositivos Lógicos Programáveis (PLDs). Esses PLDs oferecem maior flexibilidade nas 
+        implementações digitais, possibilitando a substituição de inúmeros chips por circuitos de alta densidade, projetados 
+        para atender a funções específicas.
+
+
+    1.2. RELAÇÃO:
+
+            O artigo "Design and Implementation of Digital Logic Circuits using FPGA Technology" está relacionado aos tópicos 
+            discutidos em "O CPLD (Dispositivo Complexo de Lógica Programação aplicado em automação industrial)" e no "Dispositivos
+            Lógicos Programáveis", pois todos tratam do tema de dispositivos lógicos programáveis (PLDs) e sua aplicação em sistemas 
+            digitais.
+
+            1.2.1. TECNOLOGIA FPGA E CPLD: 
+
+                O artigo discute o uso de Tecnologia de Matriz de Portas Programáveis em Campo (FPGA), que é semelhante, mas não 
+                idêntica, aos Dispositivos Complexos de Lógica Programável (CPLDs). Ambos os dispositivos pertencem à categoria de 
+                PLDs e são utilizados para implementar circuitos digitais personalizados.
+
+            1.2.2. IMPLEMENTAÇÃO DE CIRCUITOS LÓGICOS:
+
+                O artigo detalha o processo de projeto e implementação de circuitos lógicos digitais utilizando FPGA. Isso se relaciona
+                diretamente com o conteúdo abordado nos materiais do Departamento de Engenharia Elétrica e de Computação, onde os 
+                estudantes podem aprender sobre a teoria e prática por trás da implementação de circuitos lógicos em dispositivos 
+                programáveis.
+
+            1.2.3. APLICAÇÕES EM AUTOMAÇÃO INDUSTRIAL:
+
+                Embora o artigo não mencione especificamente a automação industrial, os conceitos de design e implementação de 
+                circuitos digitais utilizando FPGA têm amplas aplicações nesse campo. Os CPLDs também são frequentemente utilizados 
+                em sistemas de controle e automação industrial devido à sua capacidade de implementar lógica complexa em um único 
+                chip.
+
+            Em resumo, esses recursos compartilham um interesse comum na área de dispositivos lógicos programáveis e sua aplicação 
+            em sistemas digitais e automação industrial, embora possam abordar aspectos específicos diferentes dentro desse amplo 
+            tópico.
+
+2. DEFINIÇÃO E CARACTERIZAÇÃO DAS SIGLAS ASIC, ASSP, SPLD, CPLD, SOC E FPGA:
+
+    2.1. DEFINIÇÃO E CARACTERIZAÇÃO:
+
+        2.1.1. ASICs ( Application Specífic Integrated Circuits ):
+
+            Os ASICs são circuitos integrados projetados para uma aplicação específica. Eles são fabricados sob medida para 
+            executar funções específicas com alto desempenho e eficiência. Os ASICs exigem um processo de design e fabricação 
+            personalizado, o que resulta em custos iniciais e tempo de desenvolvimento mais altos. No entanto, eles oferecem 
+            benefícios significativos em termos de desempenho, consumo de energia e tamanho do circuito.
+
+        2.1.2. ASSP ( Application Specific Standard Product ):
+
+            Os ASSPs são circuitos integrados projetados para uma aplicação específica, mas são produzidos em massa como 
+            produtos padrão. Eles oferecem um equilíbrio entre as vantagens dos ASICs, como desempenho otimizado, e os 
+            benefícios dos produtos padrão, como custo e tempo de mercado reduzidos. Os ASSPs são amplamente utilizados em uma 
+            variedade de aplicações, desde eletrônicos de consumo até sistemas industriais.
+
+        2.1.3. SPLDs ( Simple Programmable Logic Devices ):
+
+            São circuitos que possuem uma estrutura interna baseada em um conjunto de portas AND/OR denominados arranjos lógicos,
+            podendo ou não possuir flip-flops na saída, dependendo da configuração. É a categoria de todos os pequenos PLDs, 
+            onde as características mais importantes são baixo custo e alto desempenho.
+
+        2.1.4. CPLDs ( Complex Programmable Logic Device ):
+
+            CPLD São dispositivos lógico-programáveis que possuem mais de 600 portas, isto é, um chip com vários SPLDs. Quanto 
+            maior número de portas do PLD, maior será sua complexidade, principalmente no que se refere à estrutura de conexão.
+
+        2.1.5. SoC ( System on Chip ):
+
+            Os SoCs são chips integrados que incorporam todos os componentes essenciais de um sistema completo em um único chip. 
+            Isso inclui processador, memória periféricos, controladores de dispositivos e interfaces de comunicação. Os SoCs 
+            são altamente integrados e são frequentemente usados em dispositivos eletrônicos complexos, como smartphones, 
+            tablets, sistemas embarcados e dispositivos IoT. Eles oferecem benefícios significativos em termos de desempenho,
+            eficiência energética e redução de espaço físico.
+
+        2.1.6. FPGA ( Field Programmable Gate Array ):
+
+            Um FPGA consiste de um grande arranjo de células configuráveis (ou blocos lógicos) contidos em um único chip. Cada 
+            uma dessas células contem certa capacidade computacional para implementar funções lógicas e/ou realizar roteamento 
+            para permitir a comunicação entre as células. Essas operações podem acontecer simultaneamente no arranjo das células.
+
+    2.2. TABELA: 
+
+        +------------+----------------------------------------------------------------------------------------------+
+        |   Sigla    |                                  Descrição e Características                                 |
+        +------------+----------------------------------------------------------------------------------------------+
+        |   ASIC     |  Circuitos integrados projetados para uma aplicação específica, com alto desempenho e        |
+        |            |  eficiência. Exigem processo de design e fabricação personalizado, resultando em custos      |
+        |            |  iniciais e tempo de desenvolvimento mais altos. Oferecem benefícios em desempenho,          |
+        |            |  consumo de energia e tamanho do circuito.                                                   |
+        +------------+----------------------------------------------------------------------------------------------+
+        |   ASSP     |  Circuitos integrados projetados para uma aplicação específica e produzidos em massa como    |
+        |            |  produtos padrão. Oferecem desempenho otimizado e custo reduzido em relação aos ASICs.       |
+        |            |  São amplamente utilizados em uma variedade de aplicações, desde eletrônicos de consumo      |
+        |            |  até sistemas industriais.                                                                   |
+        +------------+----------------------------------------------------------------------------------------------+
+        |   SPLD     |  Circuitos que possuem uma estrutura interna baseada em portas AND/OR, podendo conter ou     |
+        |            |  não flip-flops na saída. São caracterizados por baixo custo e alto desempenho.              |
+        +------------+----------------------------------------------------------------------------------------------+
+        |   CPLD     |  Dispositivos lógico-programáveis com mais de 600 portas, compostos por vários SPLDs. São    |
+        |            |  mais complexos e adequados para projetos maiores que exigem maior capacidade de lógica      |
+        |            |  programável.                                                                                |
+        +------------+----------------------------------------------------------------------------------------------+
+        |    SoC     |  Chips integrados que incorporam todos os componentes essenciais de um sistema completo em   |
+        |            |  um único chip, incluindo processador, memória, periféricos e interfaces de comunicação.     |
+        |            |  São altamente integrados e são frequentemente usados em dispositivos eletrônicos complexos, |
+        |            |  oferecendo benefícios em desempenho, eficiência energética e redução de espaço físico.      |
+        +------------+----------------------------------------------------------------------------------------------+
+        |   FPGA     |  Consiste em um grande arranjo de células configuráveis em um único chip, cada uma com       |
+        |            |  capacidade computacional para implementar funções lógicas e realizar roteamento para        |
+        |            |  comunicação entre as células. São altamente flexíveis e reconfiguráveis.                    |
+        +------------+----------------------------------------------------------------------------------------------+
+
+
+3. DIFERENCIAÇÃO ENTRE PROM, PLA E PAL:
+
+    3.1. DEFINIÇÕES:
+
+        3.1.1. PROM (Memória Programável Somente de Leitura):
+            A PROM funciona como um grande decodificador de endereços representado por portas AND de múltiplas entradas. 
+            Ao conectar a saída do decodificador às entradas de portas OR, a saída é configurada como "UM" ou "ZERO".
+
+            Inicialmente, as PROMs são fabricadas com todas as conexões intactas, como se armazenassem "UM" em todos os bits e endereços.
+            A programação é feita aplicando alta voltagem (10-30V) para queimar fusíveis em bits específicos, configurando-os como "ZERO". 
+
+            No entanto, uma vez que um fusível é queimado, ele não pode retornar a "UM". Essa limitação foi posteriormente abordada com as EPROMs, 
+            que podem ser apagadas com luz UV, e as EEPROMs, que permitem apagamento elétrico.
+
+        3.1.2. PLA (Arranjo Lógico Programável):
+            O PLA compartilha semelhanças com a PROM, mas difere em dois aspectos:
+            - Contém menos portas AND, então não é um decodificador completo.
+            - Ambas as matrizes de portas AND e OR são programáveis.
+
+            Apesar de ser versátil devido a dois conjuntos de fusíveis, o PLA é complexo para projetar e fabricar, tornando-o mais caro que a PROM.
+
+        3.1.3. PAL (Lógica de Arranjo Programável):
+            O PAL simplifica o PLA ao ter apenas a matriz AND programável, enquanto a matriz OR permanece fixa. 
+            Cada porta AND pode gerar qualquer produto das variáveis de entrada e seus complementos, mas cada porta OR 
+            se conecta a apenas duas saídas de portas AND, limitando a funcionalidade.
+
+            Inicialmente, os PALs eram feitos com tecnologia bipolar, o que consumia mais energia e suportava apenas lógica combinacional.
+
+    3.2. TABELA:
+
+        +------------------+--------------------------------------+---------------------------------------------+--------------------------------------------------+
+        | Características  | PROM (Memória Programável Somente Leitura) | PLA (Arranjo Lógico Programável)      |       PAL (Lógica de Arranjo Programável)        |
+        +------------------+--------------------------------------+---------------------------------------------+--------------------------------------------------+
+        | Definição        | Memória programável somente leitura  | Arranjo lógico programável                  |  Lógica programável baseada em arranjo           |
+        | Funcionalidade   | Programável uma vez                  | Programável durante a fabricação            | Programável após a fabricação                    |
+        | Estrutura        | Matriz de células de fusíveis        | Matrizes de portas AND e OR programáveis    | Matriz de dispositivos lógicos programáveis      |
+        | Capacidade       | Limitada por fusíveis                | Definida por linhas de entrada-saída        | Definida por dispositivos lógicos                |
+        | Flexibilidade    | Baixa                                | Alta                                        | Média                                            |
+        | Complexidade     | Baixa                                | Alta                                        | Média                                            |
+        +------------------+--------------------------------------+---------------------------------------------+--------------------------------------------------+
+
+4. DIFERENCIAÇÃO ENTRE CPLD E FPGA:
+
+    4.1. DIFERENÇAS:
+
+        Tanto CPLD quanto FPGA são dispositivos lógicos programáveis, muitas vezes produzidos pelas mesmas empresas, mas com tecnologias distintas:
+        - FPGAs contêm numerosos blocos lógicos pequenos com flip-flops (até um milhão). Os CPLDs, no entanto, usam menos blocos lógicos grandes.
+        - Os FPGAs dependem de RAM, perdendo sua configuração ao perder energia e exigindo reprogramação. CPLDs usam EEPROM, retendo 
+        sua configuração após desligamento.
+        - Os CPLDs oferecem melhor tempo de resposta devido ao uso de menos blocos lógicos maiores, mas oferecem menos flexibilidade.
+        - Os FPGAs possuem roteamento especializado para operações aritméticas e de RAM, tornando-os adequados para projetos complexos.
+        - Os CPLDs são melhores para projetos menores, enquanto os FPGAs lidam com grandes e complexos designs.
+
+    4.2. TABELA:
+
+        +-----------------+--------------------------------------------------+------------------------------------------------------+
+        | Características | CPLD                                             | FPGA                                                 |
+        +-----------------+--------------------------------------------------+------------------------------------------------------+
+        | Estrutura       | Menos blocos lógicos grandes                     | Numerosos blocos lógicos pequenos com flip-flops      |
+        | Capacidade      | Menor capacidade lógica                          | Maior capacidade lógica                              |
+        | Programação     | Baseada em EEPROM, mantém configuração           | Baseada em RAM, requer reprogramação após perda de energia |
+        | Flexibilidade   | Menos flexível, melhor tempo de resposta em apps pequenas | Altamente flexível, reconfiguração dinâmica possível    |
+        | Complexidade    | Adequado para projetos pequenos                  | Adequado para projetos grandes e complexos           |
+        +-----------------+--------------------------------------------------+------------------------------------------------------+
+
+REFERÊNCIAS
+
+   Udgata, S. K.; Singh, A.; Singh, S. K. Design and Implementation of Digital Logic Circuits using FPGA Technology. 
+   International Journal of Computer Applications.
+
+   Departamento de Engenharia Elétrica e de Computação, Profa. Luiza Maria Romeiro Codá. O CPLD (Dispositivo Complexo de 
+   Lógica Programação aplicado em automação industrial)..
+
+   Departamento de Engenharia Elétrica e de Computação, Profa. Luiza Maria Romeiro Codá. DISPOSITIVOS LÓGICOS PROGRAMÁVEIS.

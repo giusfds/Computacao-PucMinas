@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>moore</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>93.0</x>
+			<y>153.0</y>
+			<initial/>
+			<output/>
+		</state>
+		<state id="1" name="q1">
+			<x>184.0</x>
+			<y>65.0</y>
+			<output>0</output>
+		</state>
+		<state id="2" name="q2">
+			<x>270.0</x>
+			<y>62.0</y>
+			<output>0</output>
+		</state>
+		<state id="3" name="q3">
+			<x>389.0</x>
+			<y>64.0</y>
+			<output>1</output>
+		</state>
+		<state id="4" name="q4">
+			<x>188.0</x>
+			<y>205.0</y>
+			<output>0</output>
+		</state>
+		<state id="5" name="q5">
+			<x>275.0</x>
+			<y>201.0</y>
+			<output>0</output>
+		</state>
+		<state id="6" name="q6">
+			<x>393.0</x>
+			<y>193.0</y>
+			<output>1</output>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>3</from>
+			<to>4</to>
+			<read>1</read>
+			<transout>0</transout>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>1</to>
+			<read>0</read>
+			<transout>0</transout>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>0</read>
+			<transout>0</transout>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read>0</read>
+			<transout>1</transout>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>2</to>
+			<read>0</read>
+			<transout>0</transout>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>0</read>
+			<transout>0</transout>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>6</to>
+			<read>1</read>
+			<transout>1</transout>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>5</to>
+			<read>1</read>
+			<transout>0</transout>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>4</to>
+			<read>1</read>
+			<transout>0</transout>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>5</to>
+			<read>1</read>
+			<transout>0</transout>
+		</transition>
+	</automaton>
+</structure>

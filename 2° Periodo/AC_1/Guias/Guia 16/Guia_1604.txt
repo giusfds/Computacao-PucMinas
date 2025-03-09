@@ -1,0 +1,27 @@
+// Guia_16
+// Giuseppe
+// 801779
+
+JMP MAIN
+
+// Função MAX: Maior valor
+F_MAX:
+    MOV A, M    
+    INX H       
+    CMP M     
+    JC MAX_NEXT 
+    MOV A, M    
+MAX_NEXT:
+    INX H      
+    DCR B       
+    JNZ F_MAX  
+    RET
+
+// Programa principal
+MAIN:
+    LXI H, 0050
+    MVI B, 05   
+    CALL F_MAX  
+    STA 0056    
+    HLT
+

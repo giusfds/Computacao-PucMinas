@@ -1,0 +1,19 @@
+// Guia 15 
+// 801779 
+// Giuseppe
+
+LXI H, dado1        ; HL <- addr(dado01)
+MOV A, M            ; A <- MEM[dado01]
+
+MOV B, A            ; B <- dado01 (backup de dado01)
+ADD A               ; A <- A + A (dado01 * 2)
+ADD B               ; A <- A + B (dado01 * 3)
+
+INX H               ; HL <- HL + 1 (dado02)
+MOV C, M            ; C <- MEM[dado02]
+MOV B, C            ; B <- dado02 (backup de dado02)
+ADD C               ; A <- A + C (dado02 * 2)
+
+SUB C               ; A <- A - (2 * dado02)
+STA dado3           ; MEM[dado03] <- A
+HLT                 ; halt

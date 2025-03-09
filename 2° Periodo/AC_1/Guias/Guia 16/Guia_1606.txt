@@ -1,0 +1,28 @@
+// Guia_16
+// Giuseppe
+// 801779
+
+JMP MAIN
+
+F_SQR:
+    POP H          
+    POP B       
+    MVI A, 00  
+    MVI D, 01  
+SQR_LOOP:
+    CMP B
+    JZ SQR_END
+    ADD D
+    INX D
+    DCR B
+    JMP SQR_LOOP
+SQR_END:
+    PUSH H
+    RET
+
+MAIN:
+    LXI H, 0050  
+    MOV B, M      
+    CALL F_SQR    
+    STA 0052      
+    HLT

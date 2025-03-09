@@ -1,0 +1,13 @@
+// Guia 15 
+// 801779 
+// Giuseppe
+
+// Área de código    ; Significado         // Comentário 
+LXI H, dado1         ; HL <- addr(dado1)   // Carrega o endereço de dado1 nos registradores HL
+MOV A, M             ; A  <- MEM[HL]       // Move o conteúdo da memória no endereço em HL (dado1) para A
+INX H                ; HL <- HL + 1        // Incrementa HL para apontar para o endereço de dado2
+ADD M                ; A <- A + MEM[HL]    // Adiciona o conteúdo da memória no endereço em HL (dado2) a A
+INX H                ; HL <- HL + 1        // Incrementa HL para apontar para o endereço de dado3
+SUB M                ; A <- A - MEM[HL]    // Subtrai o conteúdo da memória no endereço em HL (dado3) de A
+STA dado4            ; MEM[dado4] <- A     // Armazena o conteúdo de A na memória no endereço dado4
+HLT                  ; halt                // Interrompe a execução

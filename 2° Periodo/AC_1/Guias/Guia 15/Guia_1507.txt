@@ -1,0 +1,18 @@
+// Guia 15 
+// 801779 
+// Giuseppe
+
+LXI H, dado1        ; HL <- addr(dado01)
+MOV A, M            ; A <- MEM[dado01]
+
+ANI 01H             ; A <- A & 01H (calcula dado01 % 2)
+MOV B, A            ; B <- dado01 % 2 (backup do resto)
+
+INX H               ; HL <- HL + 1 (dado02)
+MOV A, M            ; A <- MEM[dado02]
+RRC                 ; Rotaciona A para dividir por 2 (primeira divisão)
+RRC                 ; Rotaciona A novamente para dividir por 4 (dado02 / 4)
+
+ADD B               ; A <- A + B (soma dado02 / 4 com dado01 % 2)
+STA dado3           ; MEM[dado03] <- A
+HLT                 ; halt

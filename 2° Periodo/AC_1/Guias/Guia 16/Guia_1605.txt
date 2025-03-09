@@ -1,0 +1,28 @@
+// Guia_16
+// Giuseppe
+// 801779
+
+JMP MAIN
+
+F_BCD_TO_HEX:
+    MOV A, C      
+    ANI F0H        
+    RRC          
+    RRC
+    RRC
+    RRC
+    MOV B, A      
+    MOV A, C    
+    ANI 0FH      
+    MVI D, 0AH    
+    CALL F_IMUL   
+    ADD A        
+    RET
+
+MAIN:
+    LXI H, 0050   
+    MOV C, M    
+    CALL F_BCD_TO_HEX 
+    STA 0052      
+    HLT
+

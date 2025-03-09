@@ -1,0 +1,26 @@
+// Guia_16
+// Giuseppe
+// 801779
+
+JMP MAIN
+
+F_FAT:
+    POP H
+    POP B
+    MVI A, 01
+FAT_LOOP
+    CMP B
+    JZ FAT_END
+    CALL F_IMUL
+    DCR BC
+    JMP FAT_LOOP
+FAT_END:
+    PUSH H
+    RET
+
+MAIN:
+    LXI H, 0050
+    MOV B, M
+    CALL F_FAT
+    STA 005
+    HLT

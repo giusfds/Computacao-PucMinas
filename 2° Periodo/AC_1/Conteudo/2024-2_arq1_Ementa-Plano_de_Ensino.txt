@@ -1,0 +1,110 @@
+Pontifícia Universidade Católica de Minas Gerais
+Pró-Reitoria de Graduação
+
+Plano de Ensino    (3814 - 1º semestre de 2022)
+
+Curso: 38          -  Ciência da Computação
+Disciplina: 50609  -  ARQUITETURA E ORGANIZAÇÃO DE COMPUTADORES I
+Período: 2
+
+Turno: MANHÃ
+
+Carga Horária:
+TEÓRICA  68  horas (GRADE 68)
+TOTAL    68  horas
+
+EMENTA
+
+[ ] Histórico. 
+[ ] Modelos para representação de dados e 
+    aritmética computacional em nível de máquina. 
+[ ] Funções lógicas: modelamento e 
+[ ] algoritmos para minimização.
+[ ] Descrição e síntese de elementos lógicos combinacionais.
+[ ] Descrição e síntese de elementos lógicos sequenciais 
+[ ] e máquinas de estados. 
+[ ] Unidades funcionais básicas de computadores e 
+[ ] introdução ao software básico. 
+[ ] Linguagens e 
+[ ] ferramentas para projeto e descrição de hardware.
+
+
+UNIDADES DE ENSINO
+
+01. INTRODUÇÃO              
+   (Teoria: 04h) (Executada: 02:00h)
+
+[ ] Sistemas de numeração (decimal, binário, octal e hexadecimal)
+[ ] Notação posicional 
+[ ] Conversão entre bases
+[ ] Operações aritméticas em binário e bases associadas
+[ ] Representação numérica em ponto fixo e 
+[ ] em ponto flutuante
+[ ] Erros em representação numérica
+[ ] Representação de letras e símbolos
+
+02. LÓGICA BOOLEANA 
+   (Teoria: 08:00h) (Executada: 02:00h)
+
+[ ] Álgebra de proposições
+[ ] Aplicações em circuitos lógicos
+[ ] Propriedades e relações importantes
+[ ] Funções lógicas simples e compostas
+
+03. MINIMIZAÇÃO DE FUNÇÕES BOOLEANAS 
+   (Teoria: 08:00h )    (A Executar: 08:00h)
+
+[ ] Simplificações de circuitos
+[ ]   Simplificação algébrica
+[ ]   Mapa de Veitch-Karnaugh
+[ ]   Método de Quine-McCluskey
+[ ]   Diagramas de Decisão Binária (BDD)
+
+04. ANÁLISE E SÍNTESE DE CIRCUITOS
+   (Teoria: 20:00h )    (A Executar: 20:00h)
+
+[ ] Circuitos combinacionais
+[ ] Circuitos sequenciais assíncronos e síncronos: latches e flip-flops
+[ ] Circuitos integrados: memórias, comparadores, ALUs etc.
+[ ] Dispositivos lógicos programáveis (CPLD): ROMs, PALs, PLAs
+[ ] Outros dispositivos reconfiguráveis
+
+05. ARQUITETURA DE COMPUTADORES
+   (Teoria: 20:00h )    (A Executar: 20:00h)
+
+[ ] Tipos de computador
+[ ] Modelo de arquitetura de computador
+[ ]   Unidades de entrada e saída
+[ ]   Unidade lógica e aritmética
+[ ]   Unidade de controle
+[ ]   Memória principal
+[ ]   Vias de controle, de dados e de endereços
+[ ] Microprocessadores
+[ ]   Blocos funcionais
+[ ]   Funções
+[ ]   Aspectos construtivos e sua evolução
+[ ]   Arquitetura do conjunto de instruções
+
+06. DESCRIÇÃO E SIMULAÇÃO
+   (Teoria: 08:00h )    (A Executar: 08:00h)
+
+[ ] Simuladores e linguagens para descrição de hardware
+[ ]   VERILOG
+[ ]   VHDL
+[ ]   SystemC
+[ ]   SystemVerilog
+
+___
+
+Monitoramento:
+
+Data:
+Responsável
+
+___
+
+Anotações:
+
+
+
+

@@ -1,0 +1,66 @@
+// Guia 15 
+// 801779 
+// Giuseppe
+  
+// Área de código    ; Significado                   // Comentário 
+LXI H, dado1         ; HL <- addr(dado1)             // Carrega o endereço de dado1
+MOV B, M             ; B  <- MEM [dado1]             // Carrega os primeiros 8 bits de dado1
+INX H                ; HL <- HL+1                    // Incrementa HL para os próximos 8 bits
+MOV A, M             ; A  <- MEM [dado1+1]           // Carrega os últimos 8 bits de dado1
+
+INX H                ; HL <- HL+1                    // Incrementa HL para dado2
+MOV D, M             ; D  <- MEM [dado2]             // Carrega os primeiros 8 bits de dado2
+INX H                ; HL <- HL+1                    //
+MOV C, M             ; C  <- MEM [dado2+1]           // Carrega os últimos 8 bits de dado2
+
+// Soma dado01 + dado02
+ADD D                ; A <- A + D                    // Soma os bytes menos significativos
+MOV E, A             ; E <- A                        // Armazena o resultado parcial
+MOV A, B             ; A <- B                        //
+ADC C                ; A <- B + C + Carry            // Soma os bytes mais significativos com carry
+MOV B, A             ; B <- A                        // Armazena o resultado parcial em B
+
+INX H                ; HL <- HL+1                    // Incrementa HL para dado3
+MOV D, M             ; D  <- MEM [dado3]             // Carrega os primeiros 8 bits de dado3
+INX H                ; HL <- HL+1                    //
+MOV C, M             ; C  <- MEM [dado3+1]           // Carrega os últimos 8 bits de dado3
+
+// Soma o dado03 ao resultado anterior
+MOV A, E             ; A <- E                        // Recupera os bytes menos significativos
+ADD D                ; A <- A + D                    // Soma os bytes menos significativos
+MOV E, A             ; E <- A                        // Armazena o resultado parcial
+MOV A, B             ; A <- B                        // Recupera os bytes mais significativos
+ADC C                ; A <- B + C + Carry            // Soma os bytes mais significativos com carry
+MOV B, A             ; B <- A                        // Atualiza o resultado parcial
+
+INX H                ; HL <- HL+1                    // Incrementa HL para dado4
+MOV D, M             ; D  <- MEM [dado4]             // Carrega os primeiros 8 bits de dado4
+INX H                ; HL <- HL+1                    //
+MOV C, M             ; C  <- MEM [dado4+1]           // Carrega os últimos 8 bits de dado4
+
+// Subtrai dado04 do resultado parcial usando complemento de 2
+MOV A, D             ; A <- D                        // Bytes menos significativos de dado4
+CMA                  ; Complemento de 1              //
+ADI 1                ; Adiciona 1                    // Gera o complemento de 2
+MOV D, A             ; D <- A                        // Atualiza D com o complemento de 2
+
+MOV A, C             ; A <- C                        // Bytes mais significativos de dado4
+CMA                  ; Complemento de 1              //
+ACI 0                ; Adiciona 1 com carry          // Gera o complemento de 2
+MOV C, A             ; C <- A                        // Atualiza C com o complemento de 2
+
+// Soma o complemento de 2 ao resultado parcial
+MOV A, E             ; A <- E                        // Bytes menos significativos do resultado parcial
+ADD D                ; A <- A + D                    // Soma o complemento de 2
+MOV E, A             ; E <- A                        // Atualiza o resultado parcial
+MOV A, B             ; A <- B                        // Bytes mais significativos do resultado parcial
+ADC C                ; A <- B + C + Carry            // Soma o complemento de 2 com carry
+MOV B, A             ; B <- A                        // Atualiza o resultado final
+
+// Armazena o resultado em dado05
+LXI H, dado5         ; HL <- addr(dado5)             // Carrega o endereço de dado5
+MOV M, E             ; MEM [dado5] <- E              // Armazena os primeiros 8 bits do resultado
+INX H                ; HL <- HL+1                    //
+MOV M, B             ; MEM [dado5+1] <- B            // Armazena os últimos 8 bits do resultado
+
+HLT                  ; halt                          // Interrompe a execução
