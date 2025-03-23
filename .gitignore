@@ -2,3 +2,6 @@
 .class
 /vscode
 \vscode
+
+/.venv
+\.venv
