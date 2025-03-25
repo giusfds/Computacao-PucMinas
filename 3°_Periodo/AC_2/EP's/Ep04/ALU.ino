@@ -162,52 +162,52 @@ String do_instruction( char X, char Y, char W )
     switch ( OPCODE )
     {
     case '0':
-        res = 1;
+        res = 0;
         break;
     case '1':
-        res = A|(~B);
+        res = 1;
         break;
     case '2':
         res = A;
         break;
     case '3':
-        res = (~A)^(~B);
+        res = B;
         break;
     case '4':
-        res = ~(A&B);
+        res = ~A;
         break;
     case '5':
-        res = ~A;
+        res = ~B;
         break;
     case '6':
         res = A&(~B);
         break;
     case '7':
-        res = (~A)|(~B);
+        res = (~A)&B;
         break;
     case '8':
         res = A^B;
         break;
     case '9':
-        res = 0;
+        res = (~A)^(~B);
         break;
     case 'A':
-        res = B;
+        res = ~((~A)^(~B));
         break;
     case 'B':
-        res = A&B;
+        res = A|B;
         break;
     case 'C':
-        res = ~B;
+        res = ~(A&B);
         break;
     case 'D':
-        res = ~((~A)&B);
+        res = ~(A|B);
         break;
     case 'E':
         res = A|B;
         break;
     case 'F':
-        res = (~A)&B;
+        res = ~((~A)|(~B));
         break;
     default:
         Serial.println( "Invalid instruction!" );
@@ -279,21 +279,20 @@ void print_memory ( void )
 
 /**
 Casos de Testes:
-
-FFC
-1E3
+FF5
+1E9
 026
-009
-FBD
-AB5
+000
+FBN
+AB4
 538
 706
-7F7
-C53
-AAA
+7FN
+C59
+AA3
 FBB
-FF0
-DF1
+FF1
+DFN
 0EE
 FF2
-*/
+**/
