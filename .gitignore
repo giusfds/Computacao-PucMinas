@@ -1,7 +1,10 @@
-.exe
-.class
-/vscode
-\vscode
+# Arquivos binários e compilados
+*.exe
+*.class
 
-/.venv
-\.venv
+# Configuração do VS Code
+.vscode/
+
+# Ambientes virtuais do Python
+venv/
+.venv/
