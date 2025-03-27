@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ProcessaUla {
+public class Main {
 
     public static String procurarMnemônico(String string) {
         Map<String, String> tabela = new HashMap<>();
