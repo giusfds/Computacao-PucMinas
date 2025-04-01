@@ -1,7 +1,8 @@
 # Materias do Curso de Ciencia da Computacao da PUC Minas
 O curso abrange diversas areas da computacao, como desenvolvimento de software, redes de computadores, inteligencia artificial, entre outras. Alem disso, o curso tambem aborda areas de matematica, como calculo, algebra linear, geometria analitica, entre outras. A seguir, temos a grade do curso de ciencia da computacao da PUC Minas, com as materias que eu ja fiz, e as que ainda faltam fazer,
 
-Sabendo que meu curriculo e o 3814, a grade do curso de ciencia da computacao da PUC Minas e a seguinte:
+> Esse curriculo e o 3814 destinado ao curso de Ciencia da Computaçao na puc minas
+
 
 | Per | Disciplina                                                                                                           | Pré-Requisito / Co-requisito                        | ID        | Feito |
 |-----|----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|-----------|-------|
