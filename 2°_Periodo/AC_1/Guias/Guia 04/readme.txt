@@ -1,1 +1,0 @@
-apresentei bastande dificuldade na quastao 5 do guia, porem com a ajuda do gpt, consegui fazer, porem nao sei se ta certo
